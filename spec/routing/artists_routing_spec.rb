@@ -4,7 +4,7 @@ describe ArtistsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/artists").should route_to("artists#index")
+      expect(get("/artists")).to route_to("artists#index")
     end
 
     it "routes to #new" do
