@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @artist.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @artist.age %>
+</p>
+
+<p>
+  <b>Is available:</b>
+  <%= @artist.is_available %>
+</p>
+
+<p>
+  <b>Last album released on:</b>
+  <%= @artist.last_album_released_on %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @artist.genre %>
+</p>
+
+<p>
+  <b>Instrument played:</b>
+  <%= @artist.instrument_played %>
+</p>
+
+<p>
+  <b>Too old to rock n roll:</b>
+  <%= @artist.too_old_to_rock_n_roll %>
+</p>
+
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>
